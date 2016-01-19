@@ -1,0 +1,53 @@
+$nest-blue: #00AFD8;
+$nest-grey: #7B858E;
+
+$light-grey: #f2f4f6;
+
+html {
+  font-family: 'Open Sans', sans-serif!important;
+}
+
+header {
+  height: 60px;
+  text-align: left;
+  line-height: 60px;
+  padding: 0 50px;
+  background-color: $light-grey;
+}
+
+.header__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: $nest-blue;
+}
+
+.content {
+  padding: 50px;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Demo nest app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Andrei-Vakulski/nest-alarms-demo.git"
+  },
+  "keywords": [
+    "nest",
+    "api"
+  ],
+  "author": "Andrei.Vakulski",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "passport": "latest",
+    "passport-nest": "latest"
+  },
+  "devDependencies": {
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-jshint": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "*"
+  }
+}

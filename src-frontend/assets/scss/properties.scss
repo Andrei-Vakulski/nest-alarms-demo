@@ -1,0 +1,33 @@
+$red: #E63117;
+$yellow: #FBCD36;
+$green: #39C226;
+
+.nest__alarm {
+
+  md-card-content {
+    padding-top: 16px;
+  }
+
+  md-card-title {
+
+    color: white;
+
+    &.red{
+      background-color: $red;
+    }
+
+    &.yellow {
+      background-color: $yellow;
+    }
+
+    &.green {
+      background-color: $green;
+    }
+
+    &.grey {
+      background-color: grey!important;
+    }
+
+  }
+
+}

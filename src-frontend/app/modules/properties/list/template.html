@@ -1,0 +1,43 @@
+<div layout="row" layout-align="center center" layout-margin>
+  <md-switch 
+    ng-model="state.homeBool"
+    ng-disabled="!state.loaded"
+    ng-change="toggleHome()"
+    aria-label="Presence switcher"
+  >
+    Home presence: {{ state.away }}
+  </md-switch>  
+</div>
+
+<div layout="row" layout-align="center center" layout-margin ng-if="!state.loaded">
+  <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+</div>
+
+<div layout="row" layout-align="center center" layout-margin>
+  <div flex="33" data-ng-repeat="(id, alarm) in alarms">
+    <md-card
+      class="nest__alarm animated infinite"
+      data-ng-class="{'pulse': alarm.ui_color_state !== 'green', 'grey': !alarm.is_online}"
+    >
+      <md-card-title class="{{alarm.ui_color_state}}">
+        <md-card-title-text>
+          <span class="md-headline" data-ng-bind="alarm.name"></span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <div>
+          <span>CO alarm state is</span>
+          <span data-ng-bind="alarm.co_alarm_state"></span>
+        </div>
+        <div>
+          <span>Smoke alarm state is</span>
+          <span data-ng-bind="alarm.smoke_alarm_state"></span>
+        </div>
+        <div>
+          <span>Battery state:</span>
+          <span data-ng-bind="alarm.battery_health"></span>
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

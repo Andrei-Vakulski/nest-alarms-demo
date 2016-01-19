@@ -1,0 +1,24 @@
+{
+  "name": "nest-demo-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "authors": [
+    "Andrei Vakulski"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-ui-router": "*",
+    "angular-cookies": "~1.4.8",
+    "angular-material": "~1.0.2"
+  },
+  "devDependencies": {
+    "firebase": "~2.3.2"
+  }
+}
